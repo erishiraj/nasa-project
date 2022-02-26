@@ -4,7 +4,7 @@ require("dotenv").config();
 const {mongoConnect} = require("./services/mongo");
 const {loadLaunchesData} = require("./models/launches.model");
 const {loadPlanetData} = require("./models/plantes.model");
-
+// console
 const app = require("./app");
 
 const PORT = process.env.PORT || 8000;
