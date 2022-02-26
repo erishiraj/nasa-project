@@ -7,13 +7,13 @@ on:
 jobs:
   build:
     env:
-      CL: true
+      CI: true
       MONGO_URL: mongodb://localhost/nasa
     strategy:
       matrix:
         node-version: [14.x, 16.x]
         mongodb-version: ["4.4"]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latests
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js version ${{ matrix.node-version}}
